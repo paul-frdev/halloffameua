@@ -129,22 +129,22 @@ export const mobileNav = [
   },
 ]
 
-export const locales = [
+export const countries = [
   {
     id: 1,
-    locate: 'ua',
+    locate: 'ua-uk',
     href: '/',
     src: UaImage,
   },
   {
     id: 2,
-    locate: 'en',
+    locate: 'en-us',
     href: '/',
     src: EnImage,
   },
   {
     id: 3,
-    locate: 'es',
+    locate: 'sp-es',
     href: '/',
     src: SpImage,
   },

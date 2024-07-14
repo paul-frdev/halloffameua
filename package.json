@@ -11,21 +11,32 @@
     "build": "prisma generate && next build"
   },
   "dependencies": {
+    "@prisma/client": "^5.16.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-toast": "^1.2.1",
     "@react-google-maps/api": "^2.19.3",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.3.2",
+    "gsap": "^3.12.5",
+    "hamburger-react": "^2.5.1",
+    "lodash.debounce": "^4.0.8",
     "lucide-react": "^0.408.0",
     "next": "14.2.5",
+    "next-intl": "^3.17.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-intersection-observer": "^9.13.0",
+    "react-responsive": "^10.0.0",
+    "sass": "^1.77.8",
+    "swiper": "^11.0.5",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "zustand": "^4.5.4"
   },
   "devDependencies": {
+    "@types/lodash.debounce": "^4.0.9",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -33,6 +44,10 @@
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} scripts/seed.ts"
   }
 }
