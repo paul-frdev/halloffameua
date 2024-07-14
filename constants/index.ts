@@ -153,17 +153,22 @@ export const countries = [
 export const mainSlider = [
   {
     id: 1,
-    src: '/public/images/slider.png',
+    src: '/images/slider1.png',
     title: 'ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ',
   },
   {
     id: 2,
-    src: '/public/images/slider.png',
+    src: '/images/slider1.png',
     title: 'ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ',
   },
   {
     id: 3,
-    src: '/public/images/slider.png',
+    src: '/images/slider1.png',
+    title: 'ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ',
+  },
+  {
+    id: 4,
+    src: '/images/slider1.png',
     title: 'ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ',
   },
 ];
@@ -188,25 +193,25 @@ export const shopSlides = [
 
 export const upcomingEvents = [
   {
-    event_id: 1,
+    id: 1,
     src: '/images/event-image.png',
     title: 'Заголовок',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    event_id: 2,
+    id: 2,
     src: '/images/event-second.png',
     title: 'Заголовок',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    event_id: 3,
+    id: 3,
     src: '/images/event-image.png',
     title: 'Заголовок',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    event_id: 4,
+    id: 4,
     src: '/images/event-second.png',
     title: 'Заголовок',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',

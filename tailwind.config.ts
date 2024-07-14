@@ -19,11 +19,9 @@ const config = {
     },
     screens: {
       mobile: "410px",
-      mobileMap: "420px",
-      smallTablet: "731px",
-      tablet: "985px",
-      desktop: "1200px",
-      isShowAllElems: "1310px",
+      tablet: "731px",
+      lTablet: "985px",
+      desktop: "1260px",
       lDesktop: "1400px",
     },
     extend: {

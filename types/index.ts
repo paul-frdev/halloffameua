@@ -1,4 +1,4 @@
-export type Language = 'en' | 'uk' | 'sp';
+export type Language = 'en' | 'ua' | 'sp';
 
 export type Event = {
   event_id: string;

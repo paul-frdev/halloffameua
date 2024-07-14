@@ -19,7 +19,7 @@ export type CustomArrowPrev = {
   className?: string;
   variant?: 'secondary' | 'link' | 'outline' | 'default' | 'ghost';
   size?: 'icon' | 'default' | 'lg' | 'sm';
-  disabled: boolean
+  disabled?: boolean
 };
 
 export type CustomArrowNext = {
@@ -28,7 +28,7 @@ export type CustomArrowNext = {
   className?: string;
   variant?: 'secondary' | 'link' | 'outline' | 'default' | 'ghost';
   size?: 'icon' | 'default' | 'lg' | 'sm';
-  disabled: boolean
+  disabled?: boolean
 };
 
 type SwipperProps = {

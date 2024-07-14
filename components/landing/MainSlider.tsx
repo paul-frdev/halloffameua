@@ -3,46 +3,8 @@
 import React, { useRef } from 'react'
 import { Swiper as SwiperCore } from 'swiper/types';
 import { Carousel } from '../swiper/Carousel';
-import { Container } from '../ui/container';
 import { Slide } from './Slide';
-
-const mainSlides = [
-  {
-    id: 1,
-    src: "/images/slider1.png",
-    title: "Історія боксу в одному місці"
-  },
-  {
-    id: 2,
-    src: "/images/slider1.png",
-    title: "Історія боксу в одному місці"
-  },
-  {
-    id: 3,
-    src: "/images/slider1.png",
-    title: "Історія боксу в одному місці"
-  },
-  {
-    id: 4,
-    src: "/images/slider1.png",
-    title: "Історія боксу в одному місці"
-  },
-  {
-    id: 5,
-    src: "/images/slider1.png",
-    title: "Історія боксу в одному місці"
-  },
-  {
-    id: 6,
-    src: "/images/slider1.png",
-    title: "Історія боксу в одному місці"
-  },
-  {
-    id: 7,
-    src: "/images/slider1.png",
-    title: "Історія боксу в одному місці"
-  }
-]
+import { mainSlider } from '@/constants';
 
 export const MainSlider = () => {
   const swiperRef = useRef<SwiperCore>();
@@ -63,7 +25,7 @@ export const MainSlider = () => {
     speed: 700,
   };
 
-  const mainSliders = mainSlides.map((slide) => (
+  const mainSliders = mainSlider.map((slide) => (
     <>
       <Slide {...slide} key={slide.id} />
     </>
