@@ -10,7 +10,7 @@ interface TypographyProps {
 }
 export const TypographyP: React.FC<TypographyProps> = ({ className, children, variants, animate }) => {
   return (
-    <motion.p variants={variants} animate={animate} className={cn(`desktop:text-lg leading-[20px] font-SFPRegular`, className)}>
+    <motion.p variants={variants} animate={animate} className={cn(` font-sfPro font-normal text-[1.5rem] `, className)}>
       {children}
     </motion.p>
   );

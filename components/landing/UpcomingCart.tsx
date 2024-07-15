@@ -21,14 +21,14 @@ export const UpcomingCart: React.FC<UpcomingCartProps> = ({ event }) => {
   const route = useRouter();
 
   return (
-    <div className=" w-full desktop:max-w-[475px] h-[475px] rounded-bl-[60px] bg-[#0F0F0F] hover:bg-blue hover:shadow-shadowBlue transition-all duration-300">
+    <div className=" w-full h-[475px] rounded-bl-[60px] bg-basic hover:bg-blue hover:shadow-shadowBlue transition-all duration-300">
       <Link href={`/events/${event.id}`}>
         <div className="w-full h-[239px] mb-5">
           <Image src={event.src} alt="event-image" width={475} height={239} className="h-[239px]" />
         </div>
         <div className="flex justify-between items-start h-full">
           <div className="w-[30%] flex justify-center items-center h-[200px]">
-            <Typography className="flex justify-center items-center flex-col text-4xl leading-normal">
+            <Typography className="flex justify-center items-center flex-col text-4xl font-oswald font-bold leading-normal">
               <span>15</span>
               <span>Грд</span>
             </Typography>

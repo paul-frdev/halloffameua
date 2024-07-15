@@ -41,6 +41,7 @@ const config = {
         link: "#6f6f6f",
         basic: "#000000",
         error: "#ED7272",
+        blue: "#2451CE",
       },
       boxShadow: {
         shadowBlue: "0px 7px 35px 0px #2451CE",

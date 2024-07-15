@@ -18,15 +18,13 @@ type Props = {}
 
 const SubscribeForm = (props: Props) => {
 
-  const { ref, animationBT } = useCustomInView()
+  const { ref, animationLR } = useCustomInView()
 
   const { methods, onHandleSubmit, loading } = useSubscribeForm()
 
   return (
-    <motion.section
-      animate={animationBT}
-      ref={ref}
-      className="h-[294px] pt-8  flex justify-start items-center w-full bg-black text-white"
+    <section
+      className="h-[294px] pt-8 w-full  flex justify-start items-center w-full bg-black text-white"
     >
       <Container className=' justify-start'>
         <Title tag='h4' className="w-full max-w-[250px] mr-[4.25rem] text-[1.5rem] font-sfPro font-normal leading-[33.6px] text-left">Підпишиться щоб залишатися в курсі подій:
@@ -50,7 +48,7 @@ const SubscribeForm = (props: Props) => {
         </div>
         <Button variant='blue' className='w-full max-w-[283px] h-[60px] text-[1.5rem] font-sfPro font-normal ml-[4.25rem] ' onClick={onHandleSubmit}>Click</Button>
       </Container>
-    </motion.section>
+    </section>
   )
 }
 

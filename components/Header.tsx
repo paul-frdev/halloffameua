@@ -113,7 +113,8 @@ export const Header = () => {
                 <LanguageSwitcher />
                 <ul className="flex justify-between items-end  gap-x-[60px]">
                   {secondNav.map(item => {
-                    const isActive = `/${params.locale}${item.src}`.slice(0, -1) === pathname || `/${params.locale}${item.src}/${params.mediaId}` === pathname;
+                    const slideDPath = pathname.slice(1)
+                    const isActive = `${params.locale}${item.src}` === slideDPath || `${params.locale}${item.src}${params.mediaId}` === slideDPath;
 
                     return (
                       <li

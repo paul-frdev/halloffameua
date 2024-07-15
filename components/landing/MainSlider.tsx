@@ -3,7 +3,7 @@
 import React, { useRef } from 'react'
 import { Swiper as SwiperCore } from 'swiper/types';
 import { Carousel } from '../swiper/Carousel';
-import { Slide } from './Slide';
+import { Slide } from '../Slide';
 import { mainSlider } from '@/constants';
 
 export const MainSlider = () => {
@@ -33,10 +33,10 @@ export const MainSlider = () => {
 
   return (
     <section className='w-full'>
-      <div className='relative flex justify-center items-center w-full max-w-[1632px] px-4 mx-auto'>
+      <div className='relative w-full max-w-[1632px] px-4 mx-auto z-0' >
         <Carousel
           className="mx-auto"
-          height={960}
+          height={760}
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}

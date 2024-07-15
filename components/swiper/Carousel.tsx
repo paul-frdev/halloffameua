@@ -53,7 +53,7 @@ CustomPrevArrow.displayName = 'CustomPrevArrow';
 
 export const CustomNextArrow = React.forwardRef<HTMLButtonElement, CustomArrowNext>(({ onClick, icon: Icon, className, variant, size }, ref) => (
   <Button ref={ref} onClick={onClick} className={className} variant={variant} size={size}>
-    {Icon && <Icon size={27} />}
+    {Icon && <Icon size={27} fill='currentColor' />}
   </Button>
 ));
 CustomNextArrow.displayName = 'CustomNextArrow';
