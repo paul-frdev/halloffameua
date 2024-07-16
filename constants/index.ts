@@ -11,7 +11,7 @@ export const secondNav = [
   {
     id: 2,
     title: 'ЗМІ про нас',
-    src: '/media',
+    src: '/news',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const secondNav = [
 export const footerNav = [
   {
     id: 1,
-    src: '/media',
+    src: '/news',
     title: 'ЗМІ про нас',
   },
   {
@@ -48,7 +48,7 @@ export const footerNav = [
   },
   {
     id: 5,
-    src: '/payment-back',
+    src: '/get-refund',
     title: 'Оплата та доставка',
   },
 ];
@@ -115,7 +115,7 @@ export const mobileNav = [
   {
     id: 7,
     title: 'ЗМІ про нас',
-    src: '/media',
+    src: '/news',
   },
   {
     id: 8,
