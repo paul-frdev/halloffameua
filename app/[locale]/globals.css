@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text-color: rgb(15, 15, 15);
+}
+
 .inset-center {
   position: absolute;
   top: 50%;
@@ -35,7 +39,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 @media (max-width: 1400px) {
   body {

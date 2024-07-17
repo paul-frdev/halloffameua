@@ -32,7 +32,7 @@ export const NewsList: React.FC<NewsListProps> = ({ news }) => {
   };
 
   return (
-    <motion.section initial="initial" animate="animate" variants={fadeIn} className="bg-white py-12">
+    <motion.section initial="initial" animate="animate" variants={fadeIn} className="bg-white py-12 w-full">
       <Container className="flex-col justify-start items-start">
         <Breadcrumbs breadcrumbs={[
           { label: 'Home', href: '/' },

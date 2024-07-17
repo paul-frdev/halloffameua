@@ -102,8 +102,8 @@ export type BaseResponse = {
 
 export type Testimonial = {
   id: number;
-  image: ImageUrl[];
-  desriptiontext: string;
+  src: string;
+  description: string;
   author: string;
   dignity: string;
 }

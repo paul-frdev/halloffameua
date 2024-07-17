@@ -21,7 +21,7 @@ export const secondNav = [
   {
     id: 4,
     title: 'Оплата та доставка',
-    src: '/payment-back',
+    src: '/faq',
   },
 ];
 
@@ -125,7 +125,7 @@ export const mobileNav = [
   {
     id: 9,
     title: 'Оплата та доставка',
-    src: '/payment-back',
+    src: '/faq',
   },
 ]
 
@@ -234,3 +234,26 @@ export const fadeIn = {
   },
 };
 
+
+export const questions = [
+  {
+    id: 1,
+    title: 'oплата квитків',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim convallis molestie gravida fermentum facilisi luctus nam dui. Massa etiam lorem fames morbi id morbi in. Est adipiscing at vitae mattis. Iaculis justo ullamcorper risus mi, egestas pharetra cras odio amet. Vitae ut diam amet diam. Amet tristique adipiscing tincidunt est mattis fermentum ornare accumsan, massa. Et gravida lorem fames leo. Hendrerit phasellus arcu odio sit turpis. Vitae, lacus, vestibulum pellentesque odio id cras'
+  },
+  {
+    id: 2,
+    title: 'oплата квитків',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim convallis molestie gravida fermentum facilisi luctus nam dui. Massa etiam lorem fames morbi id morbi in. Est adipiscing at vitae mattis. Iaculis justo ullamcorper risus mi, egestas pharetra cras odio amet. Vitae ut diam amet diam. Amet tristique adipiscing tincidunt est mattis fermentum ornare accumsan, massa. Et gravida lorem fames leo. Hendrerit phasellus arcu odio sit turpis. Vitae, lacus, vestibulum pellentesque odio id cras'
+  },
+  {
+    id: 3,
+    title: 'oплата квитків',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim convallis molestie gravida fermentum facilisi luctus nam dui. Massa etiam lorem fames morbi id morbi in. Est adipiscing at vitae mattis. Iaculis justo ullamcorper risus mi, egestas pharetra cras odio amet. Vitae ut diam amet diam. Amet tristique adipiscing tincidunt est mattis fermentum ornare accumsan, massa. Et gravida lorem fames leo. Hendrerit phasellus arcu odio sit turpis. Vitae, lacus, vestibulum pellentesque odio id cras'
+  },
+  {
+    id: 4,
+    title: 'oплата квитків',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim convallis molestie gravida fermentum facilisi luctus nam dui. Massa etiam lorem fames morbi id morbi in. Est adipiscing at vitae mattis. Iaculis justo ullamcorper risus mi, egestas pharetra cras odio amet. Vitae ut diam amet diam. Amet tristique adipiscing tincidunt est mattis fermentum ornare accumsan, massa. Et gravida lorem fames leo. Hendrerit phasellus arcu odio sit turpis. Vitae, lacus, vestibulum pellentesque odio id cras'
+  }
+]

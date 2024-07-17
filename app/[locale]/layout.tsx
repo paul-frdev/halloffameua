@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from '@/lib/utils';
 import { oswald, sfPro } from '@/fonts';
@@ -7,7 +6,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hall of fame",
@@ -33,7 +31,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
 
   return (
     <html lang={locale}>
-      <body className={cn(`antialiased relative bg-basic  text-white transition-all duration-300`, sfPro.variable, oswald.variable)} suppressHydrationWarning>
+      <body className={cn(`antialiased relative bg-basic  text-white transition-height duration-300`, sfPro.variable, oswald.variable)} suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main className='flex min-h-screen flex-col items-center justify-between'>

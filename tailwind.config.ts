@@ -1,13 +1,8 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     container: {
@@ -26,8 +21,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        oswald: ['var(--font-oswald)'],
-        sfPro: ['var(--font-sfpro)'],
+        oswald: ["var(--font-oswald)"],
+        sfPro: ["var(--font-sfpro)"],
       },
       backgroundImage: {
         bg: "url('/images/boxing-back.png')",
@@ -42,6 +37,7 @@ const config = {
         basic: "#000000",
         error: "#ED7272",
         blue: "#2451CE",
+        desc: "var(--text-color)",
       },
       boxShadow: {
         shadowBlue: "0px 7px 35px 0px #2451CE",
@@ -55,10 +51,26 @@ const config = {
       },
       borderColor: {
         errorInput: "#ED7272",
+        gray: "#acacac",
+        gray900: "#999999",
       },
+    },
+    keyframes: {
+      "accordion-down": {
+        from: { height: "0" },
+        to: { height: "var(--radix-accordion-content-height)" },
+      },
+      "accordion-up": {
+        from: { height: "var(--radix-accordion-content-height)" },
+        to: { height: "0" },
+      },
+    },
+    animation: {
+      "accordion-down": "accordion-down 0.2s ease-out",
+      "accordion-up": "accordion-up 0.2s ease-out",
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

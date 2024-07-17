@@ -13,13 +13,9 @@ import { cn } from "@/lib/utils";
 // import { MobileMenu } from "./mobileMenu";
 import { Typography } from './ui/typography';
 
-// Import constants and icons
+
 import { mainNav, secondNav } from "@/constants";
 import { Logo } from "@/icons/logo";
-import { Facebook } from "@/icons/facebook";
-import { Twitter } from "@/icons/twitter";
-import { Instagram } from "@/icons/instagram";
-import { Youtube } from "@/icons/youtube";
 import { Container } from './ui/container';
 import { LanguageSwitcher } from './ui/languageSwitcher';
 import { SocialMedia } from './ui/socialMedia';
@@ -28,14 +24,6 @@ import { CartWidget } from './CartWidget';
 import { gsap } from "gsap";
 import debounce from "lodash.debounce";
 
-
-
-export const socialMediaData = [
-  { id: 1, social: <Facebook />, link: "https://www.facebook.com" },
-  { id: 2, social: <Twitter />, link: "https://www.twitter.com" },
-  { id: 3, social: <Instagram />, link: "https://www.instagram.com" },
-  { id: 4, social: <Youtube />, link: "https://www.youtube.com" },
-];
 
 export const Header = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -58,7 +46,7 @@ export const Header = () => {
       if (window.scrollY > 30) {
         setIsFixed(true);
       } else {
-        if (window.scrollY < 60) {
+        if (window.scrollY < 30) {
           setIsFixed(false);
         }
       }
@@ -89,11 +77,11 @@ export const Header = () => {
     <>
       <header
         className={cn(
-          `transition-all fixed top-0 left-0 right-0 duration-300 bg-basic z-[12] pb-0 lDesktop:pt-6  lDesktop:pb-6`,
+          `transition-height fixed top-0 left-0 right-0 duration-300 bg-basic z-[12] pb-0 lDesktop:pt-6  lDesktop:pb-6`,
           isFixed ? "lDesktop:pb-4 lDesktop:pt-4" : ""
         )}
       >
-        <Container className={cn(`flex justify-between w-full items-center lDesktop:items-end translate-all duration-300 h-[80px] lDesktop:h-auto [@media(min-width:1064px)]:gap-x-12`)}>
+        <Container className={cn(`flex justify-between w-full items-center lDesktop:items-end translate-height duration-300 h-[80px] lDesktop:h-auto [@media(min-width:1064px)]:gap-x-12`)}>
           <Link
             href="/"
             className={cn(` mr-auto pt-[10px]`, isFixed ? "mt-0" : "lDesktop:-mt-[12px]")}
@@ -104,11 +92,12 @@ export const Header = () => {
           </Link>
           <div
             className={cn(
-              `flex w-full max-w-[1200px] lDesktop:max-w-[1289px] flex-col justify-end items-start ml-auto transition-all duration-300`,
+              `flex w-full max-w-[1200px] lDesktop:max-w-[1289px] flex-col justify-end items-start ml-auto transition-height duration-300`,
               isFixed ? "gap-y-0" : " lDesktop:gap-y-[40px]"
             )}
           >
-            <div className={cn(`z-[14] w-full transition-all duration-300`, isFixed ? "hidden" : " visible ")}>
+            {/* Second Nav */}
+            <div className={cn(`z-[14] w-full`, isFixed ? "hidden" : " visible ")}>
               <div className={cn(`hidden lDesktop:flex w-full  justify-between items-center`)}>
                 <LanguageSwitcher />
                 <ul className="flex justify-between items-end  gap-x-[60px]">
@@ -138,7 +127,7 @@ export const Header = () => {
                 )}
               </div>
             </div>
-
+            {/* Main Nav Sticky */}
             <div
               className={cn(
                 `flex  w-full gap-x-2 tablet:gap-x-12 items-center ml-auto justify-end lDesktop:justify-between`,
@@ -172,7 +161,7 @@ export const Header = () => {
                 ) : (
                   <Link
                     href="/events"
-                    className="bg-white hover:bg-blue  text-basic transition-all px-4 lDesktop:px-12 duration-300 inline-flex items-center justify-center rounded-md font-medium ring-offset-background hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-[12px]  tablet:text-lg lDesktop::text-2xl uppercase font-oswaldBold h-[40px] tablet:h-[50px] lDesktop:h-[69px] w-full max-w-[200px] tablet:max-w-[220px] desktop:max-w-[305px] mobile:text-sm"
+                    className="bg-white hover:bg-blue  text-basic /* transition */-all px-4 lDesktop:px-12 duration-300 inline-flex items-center justify-center rounded-md font-medium ring-offset-background hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-[12px]  tablet:text-lg lDesktop::text-2xl uppercase font-oswaldBold h-[40px] tablet:h-[50px] lDesktop:h-[69px] w-full max-w-[200px] tablet:max-w-[220px] desktop:max-w-[305px] mobile:text-sm"
                   >
                     {tr("Замовити квиток")}
                   </Link>
@@ -184,6 +173,7 @@ export const Header = () => {
             </div>
           </div>
         </Container>
+        {/* Mobile navigation */}
         {/* <MobileNav isOpen={isOpenMobileNav} setIsOpen={setIsOpenMobileNav} /> */}
         <div className="hidden items-start items-center tablet:flex lDesktop:hidden  bg-basic h-auto w-full py-[5px] border-t mt-2 border-white">
           <Container className="items-start flex-col justify-start text-white font-oswaldBold py-2">
