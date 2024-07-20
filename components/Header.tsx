@@ -17,8 +17,8 @@ import { Typography } from './ui/typography';
 import { mainNav, secondNav } from "@/constants";
 import { Logo } from "@/icons/logo";
 import { Container } from './ui/container';
-import { LanguageSwitcher } from './ui/languageSwitcher';
-import { SocialMedia } from './ui/socialMedia';
+import { LanguageSwitcher } from './elements/languageSwitcher';
+import { SocialMedia } from './elements/socialMedia';
 import { ChevronUp, CircleCheckBig } from 'lucide-react';
 import { CartWidget } from './CartWidget';
 import { gsap } from "gsap";
@@ -135,11 +135,12 @@ export const Header = () => {
             >
               <ul className=" hidden tablet:flex justify-between items-start gap-x-[35px] desktop:gap-x-[50px] lDesktop:gap-x-[92px]">
                 {mainNav.map(item => {
-                  const isActive =
-                    `/${params.locale}${item.src}`.slice(0, -1) === pathname ||
-                    `/${params.locale}${item.src}/${params.eventId}` === pathname ||
-                    `/${params.locale}${item.src}/${params.productId}` === pathname ||
-                    `/${params.locale}${item.src}/${params.newsId}` === pathname;
+                  const mainPath = `/${params.locale}`
+                  const isActive = `${mainPath}${item.src}` === `${pathname}/` ||
+                    `${mainPath}/${params.eventId}` === pathname ||
+                    `${mainPath}/${params.productId}` === pathname ||
+                    `${mainPath}/${params.newsId}` === pathname ||
+                    `${mainPath}${item.src}` === pathname;
 
                   return (
                     <li

@@ -48,6 +48,7 @@ const config = {
         white: "#ffffff",
         blue: "#2451CE",
         gray: "#292929;",
+        card: "#F4F4F4",
       },
       borderColor: {
         errorInput: "#ED7272",

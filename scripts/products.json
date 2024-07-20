@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Боксерські рукавички",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 100,
@@ -9,29 +9,30 @@
     "category": "boxing gloves",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/14.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/15.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": ["8oz", "10oz", "12oz", "14oz"]
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Боксерські рукавички",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 100,
@@ -40,29 +41,30 @@
     "category": "boxing gloves",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/14.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/15.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": ["8oz", "10oz", "12oz", "14oz"]
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Боксерські рукавички",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 100,
@@ -71,29 +73,30 @@
     "category": "boxing gloves",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/14.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/15.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": ["8oz", "10oz", "12oz", "14oz"]
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Боксерські рукавички",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 100,
@@ -102,29 +105,30 @@
     "category": "boxing gloves",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/14.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/15.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": ["8oz", "10oz", "12oz", "14oz"]
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Боксерські рукавички",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 100,
@@ -133,29 +137,30 @@
     "category": "boxing gloves",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/14.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/15.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": ["8oz", "10oz", "12oz", "14oz"]
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 6,
+    "id": "6",
     "title": "Боксерські рукавички",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 100,
@@ -164,29 +169,30 @@
     "category": "boxing gloves",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/leone.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": ["8oz", "10oz", "12oz", "14oz"]
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 7,
+    "id": "7",
     "title": "Боксерські рукавички",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 100,
@@ -195,29 +201,30 @@
     "category": "Boxing gloves",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/leone.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": ["8oz", "10oz", "12oz", "14oz"]
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 8,
+    "id": "8",
     "title": "Боксерські рукавички",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 100,
@@ -226,29 +233,30 @@
     "category": "Boxing gloves",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/leone.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/leone.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": ["8oz", "10oz", "12oz", "14oz"]
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 9,
+    "id": "9",
     "title": "Боксерська футболка",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 200,
@@ -257,29 +265,30 @@
     "category": "T-shirts",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/7.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/8.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/11.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": []
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 11,
+    "id": "10",
     "title": "Боксерська футболка",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 200,
@@ -288,29 +297,30 @@
     "category": "T-shirts",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/7.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/8.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/11.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": []
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 12,
+    "id": "11",
     "title": "Боксерська футболка",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 200,
@@ -319,29 +329,30 @@
     "category": "T-shirts",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/7.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/8.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/11.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": []
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 13,
+    "id": "12",
     "title": "Боксерська футболка",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 200,
@@ -350,29 +361,30 @@
     "category": "T-shirts",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/7.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/8.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/11.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": []
       }
-    ]
+    ],
+    "quantity": 10
   },
   {
-    "id": 14,
+    "id": "13",
     "title": "Боксерська футболка",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
     "price": 200,
@@ -381,25 +393,58 @@
     "category": "T-shirts",
     "images": [
       {
-        "id": 1,
+        "id": "1",
         "src": "/images/7.jpeg"
       },
       {
-        "id": 2,
+        "id": "2",
         "src": "/images/8.jpeg"
       },
       {
-        "id": 3,
+        "id": "3",
         "src": "/images/11.jpeg"
       }
     ],
     "characteristics": [
       {
-        "id": 1,
+        "id": "1",
         "color": ["black", "white", "blue"],
         "size": ["m", "s", "xl", "xxl"],
         "weight": []
       }
-    ]
+    ],
+    "quantity": 10
+  },
+  {
+    "id": "14",
+    "title": "Боксерська футболка",
+    "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad atque vel et. Aspernatur recusandae provident officia! Dolor fugiat pariatur, corrupti, adipisci quidem iusto dolorum amet cumque reprehenderit a sunt obcaecati!",
+    "price": 200,
+    "discount": "0.05",
+    "isDiscount": false,
+    "category": "T-shirts",
+    "images": [
+      {
+        "id": "1",
+        "src": "/images/7.jpeg"
+      },
+      {
+        "id": "2",
+        "src": "/images/8.jpeg"
+      },
+      {
+        "id": "3",
+        "src": "/images/11.jpeg"
+      }
+    ],
+    "characteristics": [
+      {
+        "id": "1",
+        "color": ["black", "white", "blue"],
+        "size": ["m", "s", "xl", "xxl"],
+        "weight": []
+      }
+    ],
+    "quantity": 10
   }
 ]

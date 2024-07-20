@@ -31,7 +31,7 @@ export const Faq = () => {
           <Title className="uppercase text-[4rem] text-black font-oswald font-bold">Оплата, доставка та повернення</Title>
           <Search className='-order-1 max-w-[350px] mb-8 tablet:mb-0 tablet:order-1' searchQuery={searchQuery} handleSearchInputChange={handleSearchInputChange} />
         </div>
-        <div className=' w-full flex flex-col justify-start items-start'>
+        <div className='w-full flex flex-col justify-start items-start'>
           {questions.map((item) => (
             <Accordion key={item.id} {...item} />
           ))}

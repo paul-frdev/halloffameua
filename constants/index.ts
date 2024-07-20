@@ -72,7 +72,7 @@ export const mainNav = [
   {
     id: 4,
     title: 'Магазин',
-    src: '/shop',
+    src: '/products',
   },
   {
     id: 5,
@@ -100,7 +100,7 @@ export const mobileNav = [
   {
     id: 4,
     title: 'Магазин',
-    src: '/shop',
+    src: '/products',
   },
   {
     id: 5,
@@ -149,47 +149,6 @@ export const countries = [
     src: SpImage,
   },
 ];
-
-export const mainSlider = [
-  {
-    id: 1,
-    src: '/images/slider1.png',
-    title: 'ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ',
-  },
-  {
-    id: 2,
-    src: '/images/slider1.png',
-    title: 'ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ',
-  },
-  {
-    id: 3,
-    src: '/images/slider1.png',
-    title: 'ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ',
-  },
-  {
-    id: 4,
-    src: '/images/slider1.png',
-    title: 'ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ',
-  },
-];
-
-export const shopSlides = [
-  {
-    id: 1,
-    src: '/public/images/shop.png',
-    title: 'ОФІЦІЙНИЙ ІНТЕРНЕТ-МАГАЗИН ЗАЛИ СЛАВИ УКРАЇНСЬКОГО БОКСУ'
-  },
-  {
-    id: 2,
-    src: '/public/images/shop.png',
-    title: 'ОФІЦІЙНИЙ ІНТЕРНЕТ-МАГАЗИН ЗАЛИ СЛАВИ УКРАЇНСЬКОГО БОКСУ'
-  },
-  {
-    id: 3,
-    src: '/public/images/shop.png',
-    title: 'ОФІЦІЙНИЙ ІНТЕРНЕТ-МАГАЗИН ЗАЛИ СЛАВИ УКРАЇНСЬКОГО БОКСУ'
-  },
-]
 
 export const upcomingEvents = [
   {

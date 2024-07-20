@@ -2,11 +2,15 @@
 
 import React, { useRef } from 'react'
 import { Swiper as SwiperCore } from 'swiper/types';
-import { Carousel } from '../swiper/Carousel';
-import { Slide } from '../Slide';
-import { mainSlider } from '@/constants';
+import { Slide } from './Slide';
+import { Carousel } from './swiper/Carousel';
+import { IMainSlide } from '@/types/sliders';
 
-export const MainSlider = () => {
+
+type MainSliderProps = {
+  slides: IMainSlide[]
+}
+export const MainSlider = ({ slides }: MainSliderProps) => {
   const swiperRef = useRef<SwiperCore>();
 
   const carouselOptions = {
@@ -25,7 +29,7 @@ export const MainSlider = () => {
     speed: 700,
   };
 
-  const mainSliders = mainSlider.map((slide) => (
+  const mainSliders = slides.map((slide) => (
     <>
       <Slide {...slide} key={slide.id} />
     </>

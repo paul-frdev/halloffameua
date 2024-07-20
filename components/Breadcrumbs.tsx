@@ -1,4 +1,5 @@
 import { sfPro } from '@/fonts';
+import { cn } from '@/lib/utils';
 import { clsx } from 'clsx';
 import Link from 'next/link';
 
@@ -10,11 +11,13 @@ interface Breadcrumb {
 
 export default function Breadcrumbs({
   breadcrumbs,
+  className,
 }: {
   breadcrumbs: Breadcrumb[];
+  className?: string;
 }) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-6 block">
+    <nav aria-label="Breadcrumb" className={cn(`mb-6 block`, className)}>
       <ol className={clsx(sfPro.className, 'flex text-xl md:text-2xl')}>
         {breadcrumbs.map((breadcrumb, index) => (
           <li
@@ -27,7 +30,7 @@ export default function Breadcrumbs({
             <Link href={breadcrumb.href}>{breadcrumb.label}</Link>
             {index < breadcrumbs.length - 1 ? (
               <span className="mx-3 inline-block">
-            |
+                |
               </span>
             ) : null}
           </li>

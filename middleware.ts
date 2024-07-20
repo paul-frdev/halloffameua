@@ -5,7 +5,7 @@ export default createMiddleware({
   // Use this locale when we can't match
   // another with our user's preferred locales
   // and when no locale is explicitly set.
-  defaultLocale: "en-us",
+  defaultLocale: "uk-ua",
 
   // List all supported locales (en-us, ar-eg).
   locales,

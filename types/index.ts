@@ -35,39 +35,35 @@ export type Location = {
   street: string;
 };
 
-
-export type ImageProduct = {
-  id: number;
-  src: string;
-};
-
-export type ProductCharacteristic = {
-  id: number;
-  color: string[];
-  size: string[];
-  weight: string[];
-};
-
 export type Slider = {
   id: number;
   src: string;
   title: string;
 };
 
+export type ImageProduct = {
+  id: string;
+  src: string;
+};
+
+export type ProductCharacteristic = {
+  id: string;
+  color: string[];
+  size: string[];
+  weight: string[];
+};
+
 export type Product = {
-  id?: number;
+  id: string;
   title: string;
   description: string;
   price: number;
+  discount: string;
+  isDiscount: boolean;
   category: string;
-  previewImage: string;
   images: ImageProduct[];
   characteristics: ProductCharacteristic[];
-  discount?: string;
-  isDiscount?: boolean;
-  quantity?: number;
-  color?: string;
-  size?: string;
+  quantity: number;
 };
 
 export interface News extends Event {
@@ -76,7 +72,7 @@ export interface News extends Event {
 
 
 export interface Image {
-  id: number;
+  id: string;
   src: string;
 }
 
