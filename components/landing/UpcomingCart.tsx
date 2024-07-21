@@ -1,11 +1,13 @@
+'use client'
+
 import { ArrowRight } from "@/icons/arrowRight";
-import { Event } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { Typography } from '../ui/typography';
 import { Button } from '../ui/button';
+import { useTranslations } from 'next-intl';
 
 
 type IEvent = {
@@ -19,6 +21,7 @@ interface UpcomingCartProps {
 }
 export const UpcomingCart: React.FC<UpcomingCartProps> = ({ event }) => {
   const route = useRouter();
+  const tr = useTranslations("upcoming-events");
 
   return (
     <div className=" w-full h-[475px] rounded-bl-[60px] bg-basic hover:bg-blue hover:shadow-shadowBlue transition-all duration-300">

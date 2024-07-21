@@ -132,7 +132,7 @@ export const mobileNav = [
 export const countries = [
   {
     id: 1,
-    locate: 'ua-uk',
+    locate: 'uk-ua',
     href: '/',
     src: UaImage,
   },

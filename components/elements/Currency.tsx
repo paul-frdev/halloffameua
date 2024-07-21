@@ -7,12 +7,13 @@ interface CurrencyProps {
   price: number;
   discount?: string;
   isDiscount?: boolean;
+  priceClass?: string
 }
-export const Currency: React.FC<CurrencyProps> = ({ price, discount, isDiscount }) => {
+export const Currency: React.FC<CurrencyProps> = ({ price, discount, isDiscount, priceClass }) => {
 
   return (
     <div className="flex justify-center items-center">
-      <p className={cn(`text-[1.125rem] font-sfPro font-bold text-black h-[45px]`, isDiscount && "line-through mr-4")}>
+      <p className={cn(`text-[1.125rem] font-sfPro font-bold text-black h-[45px]`, priceClass, isDiscount && "line-through mr-4")}>
         {price} ₴
       </p>
       {isDiscount && (

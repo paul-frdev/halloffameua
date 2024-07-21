@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useMediaQuery } from "react-responsive";
@@ -23,6 +22,7 @@ import { ChevronUp, CircleCheckBig } from 'lucide-react';
 import { CartWidget } from './CartWidget';
 import { gsap } from "gsap";
 import debounce from "lodash.debounce";
+import { Link } from '@/i18n.config';
 
 
 export const Header = () => {

@@ -11,6 +11,7 @@ import { Container } from '../ui/container';
 import { Title } from '../ui/title';
 import { TypographyP } from '../ui/typographyP';
 import { Button } from '../ui/button';
+import { useTranslations } from 'next-intl';
 
 export const History = () => {
   const route = useRouter();
@@ -18,16 +19,17 @@ export const History = () => {
   const { ref, animationBT, animationLR, animationRL } = useCustomInView()
 
   const isMob = useMediaQuery({ query: "(max-width: 416px)" });
+  const tr = useTranslations("history");
 
 
   const buttons = [
     {
-      text: "ДЕТАЛЬНІШЕ",
+      text: tr("ДЕТАЛЬНІШЕ"),
       variant: "outline",
       route: "/about",
     },
     {
-      text: "КНИГА ВІДГУКІВ",
+      text: tr("КНИГА ВІДГУКІВ"),
       variant: "default",
       route: "/testimonials",
     },
@@ -38,8 +40,7 @@ export const History = () => {
         <div className=' overflow-hidden flex justify-between items-start'>
           <div className="w-full max-w-[60%] pb-0">
             <Title animate={animationLR} className="text-5xl font-oswald font-bold pb-9 border-b-4 border-white mb-6">
-              ІСТОРІЯ УКРАЇНСЬКОГО БОКСУ
-              <br />В ОДНОМУ МІСЦІ...
+              {tr("ІСТОРІЯ УКРАЇНСЬКОГО БОКСУ В ОДНОМУ МІСЦІ")}...
             </Title>
             <TypographyP
               animate={animationLR}

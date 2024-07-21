@@ -1,14 +1,14 @@
-type UserRegistrationProps = {
+type InputProps = {
   id: string;
   type: 'email' | 'text' | 'password';
   inputType: 'select' | 'input';
   options?: { value: string; label: string; id: string }[];
   label?: string;
-  placeholder: string;
+  placeholder?: string;
   name: string;
 };
 
-export const USER_REGISTRATION_FORM: UserRegistrationProps[] = [
+export const USER_REGISTRATION_FORM: InputProps[] = [
   {
     id: '1',
     inputType: 'input',
@@ -46,7 +46,7 @@ export const USER_REGISTRATION_FORM: UserRegistrationProps[] = [
   },
 ];
 
-export const USER_LOGIN_FORM: UserRegistrationProps[] = [
+export const USER_LOGIN_FORM: InputProps[] = [
   {
     id: '1',
     inputType: 'input',
@@ -64,14 +64,14 @@ export const USER_LOGIN_FORM: UserRegistrationProps[] = [
 ];
 
 
-export const SUBSCRIBE_USER: UserRegistrationProps[] = [
+export const SUBSCRIBE_USER: InputProps[] = [
   {
     id: '1',
     inputType: 'input',
     placeholder: 'Full name',
     name: 'fullname',
     type: 'text',
-    label: 'FullName'
+    label: 'Full Name'
   },
   {
     id: '2',
@@ -82,3 +82,25 @@ export const SUBSCRIBE_USER: UserRegistrationProps[] = [
     label: 'Email'
   }
 ]
+
+export const PRODUCT_COLORS: InputProps[] = [
+  {
+    id: '1',
+    inputType: 'select',
+    name: 'color',
+    type: 'text',
+    label: 'Color'
+  }
+]
+
+
+export const PRODUCT_SIZES: InputProps[] = [
+  {
+    id: '1',
+    inputType: 'select',
+    name: 'size',
+    type: 'text',
+    label: 'Size'
+  }
+]
+

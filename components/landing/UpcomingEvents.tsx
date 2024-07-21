@@ -14,6 +14,7 @@ import { Button } from '../ui/button';
 import { Carousel, CustomNextArrow } from '../swiper/Carousel';
 import { UpcomingCart } from './UpcomingCart';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export const UpcomingEvents = () => {
 
@@ -22,6 +23,7 @@ export const UpcomingEvents = () => {
   const pathname = usePathname();
 
   const { ref, animationLR, animationRL } = useCustomInView()
+  const tr = useTranslations("upcoming-events");
 
   const isMain = ["/", "/en-us/", "es-sp", "ua-uk"].includes(pathname);
 
@@ -80,11 +82,11 @@ export const UpcomingEvents = () => {
       <span className=' absolute top-0 left-0 right-0 bottom-0 h-full w-full blur  bg-upcoming  object-center bg-no-repeat object-fill' />
       <Container ref={ref} className="justify-between items-start py-20 overflow-hidden">
         <div className="z-10 w-full max-w-[40%] pb-0 py-24 ">
-          <Title tag='h2' className="text-6xl font-oswald font-bold  border-b-4 pb-10  border-white mb-20">
-            НАЙБЛИЖЧІ ПОДІЇ
+          <Title tag='h2' className="text-6xl font-oswald font-bold  border-b-4 pb-10 uppercase  border-white mb-20">
+            {tr("Найближчі події")}
           </Title>
           <Typography className="w-full text-2xl font-sfPro font-normal mb-12">
-            Наші заходи порадують шанувальників та фанатів боксу
+            {tr("Наші заходи порадують шанувальників та фанатів боксу")}
           </Typography>
           <Button
             className="flex justify-center h-[60px] items-center gap-x-4 text-2xl leading-[33.6px]"
@@ -92,7 +94,7 @@ export const UpcomingEvents = () => {
             size="lg"
             onClick={() => route.push("/events")}
           >
-            <span>Дивитись усі події</span>
+            <span>{tr("Дивитись усі події")}</span>
             <span className="pt-1">
               <ArrowRight />
             </span>

@@ -5,6 +5,7 @@ import { Swiper as SwiperCore } from 'swiper/types';
 import { Slide } from './Slide';
 import { Carousel } from './swiper/Carousel';
 import { IMainSlide } from '@/types/sliders';
+import { useTranslations } from 'next-intl';
 
 
 type MainSliderProps = {
@@ -12,6 +13,7 @@ type MainSliderProps = {
 }
 export const MainSlider = ({ slides }: MainSliderProps) => {
   const swiperRef = useRef<SwiperCore>();
+  const tr = useTranslations("slider");
 
   const carouselOptions = {
     breakpoints: {
@@ -31,7 +33,7 @@ export const MainSlider = ({ slides }: MainSliderProps) => {
 
   const mainSliders = slides.map((slide) => (
     <>
-      <Slide {...slide} key={slide.id} />
+      <Slide title={tr(slide.title)} src={slide.src} key={slide.id} />
     </>
   ));
 

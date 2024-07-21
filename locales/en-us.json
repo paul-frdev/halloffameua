@@ -10,10 +10,26 @@
     "Новини": "News",
     "Магазин": "Shop",
     "Контакти": "Contacts",
-    "Замовити квиток": "Order a ticket"
+    "Замовити квиток": "Buy a ticket"
   },
   "slider": {
     "ЗАЛ СЛАВИ УКРАЇНСЬКОГО БОКСУ": "UKRAINIAN BOXING HALL OF FAME",
     "ОФІЦІЙНИЙ ІНТЕРНЕТ-МАГАЗИН ЗАЛИ СЛАВИ УКРАЇНСЬКОГО БОКСУ": "OFFICIAL ONLINE STORE OF THE HALL OF FAME OF UKRAINIAN BOXING"
+  },
+  "history": {
+    "ДЕТАЛЬНІШЕ": "More details",
+    "КНИГА ВІДГУКІВ": "Book of reviews",
+    "ІСТОРІЯ УКРАЇНСЬКОГО БОКСУ В ОДНОМУ МІСЦІ": "The history of ukrainian boxing at one place"
+  },
+  "upcoming-events": {
+    "Найближчі події": "Nearest events",
+    "Наші заходи порадують шанувальників та фанатів боксу": "Our events will glad our boxing fans",
+    "Дивитись усі події": "See all events"
+  },
+  "subscribe-form": {
+    "Підпишиться щоб залишатися в курсі подій:": "Subscribe to stay aware of the latest news",
+    "Підписатися": "Subscribe",
+    "Full Name": "Full Name",
+    "Email": "Email"
   }
 }

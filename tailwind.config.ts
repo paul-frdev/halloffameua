@@ -38,6 +38,7 @@ const config = {
         error: "#ED7272",
         blue: "#2451CE",
         desc: "var(--text-color)",
+        label: "var(--label-color)",
       },
       boxShadow: {
         shadowBlue: "0px 7px 35px 0px #2451CE",

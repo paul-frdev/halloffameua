@@ -7,7 +7,7 @@ import { Container } from '../ui/container';
 import Breadcrumbs from '../Breadcrumbs';
 import { Title } from '../ui/title';
 import { Search } from '../Search';
-import { Accordion } from './Accordion';
+import { Accordion } from '../elements/Accordion';
 
 export const Faq = () => {
 
