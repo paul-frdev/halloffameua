@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useParams, usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useMediaQuery } from "react-responsive";
 import { Squash as Hamburger } from 'hamburger-react';
@@ -22,7 +22,7 @@ import { ChevronUp, CircleCheckBig } from 'lucide-react';
 import { CartWidget } from './CartWidget';
 import { gsap } from "gsap";
 import debounce from "lodash.debounce";
-import { Link } from '@/i18n.config';
+import { Link, usePathname } from '@/i18n.config';
 
 
 export const Header = () => {
@@ -36,27 +36,25 @@ export const Header = () => {
 
   const isBigScreen = useMediaQuery({ query: "(min-width: 1400px)" });
 
-  const match = pathname.match(/^\/events\/(\d+)$/);
-  const eventId = match ? match[1] : null;
-  const matchProductId = pathname.match(/^\/shop\/(\d+)$/);
-  const productId = matchProductId ? matchProductId[1] : null;
+  const showCart = !pathname.match(/^\/events\/\d+$/) && !pathname.match(/^\/products\/\d+$/) && pathname !== "/cart";
+
+  const isActiveLink = (itemSrc: string) => {
+    const currentPath = `${pathname}`;
+
+    if (itemSrc === '/') {
+      return currentPath === `/`;
+    }
+
+    return currentPath.startsWith(`${itemSrc}`);
+  };
 
   useEffect(() => {
     const handleScroll = debounce(() => {
-      if (window.scrollY > 30) {
-        setIsFixed(true);
-      } else {
-        if (window.scrollY < 30) {
-          setIsFixed(false);
-        }
-      }
+      setIsFixed(window.scrollY > 30);
     }, 0);
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -101,30 +99,25 @@ export const Header = () => {
               <div className={cn(`hidden lDesktop:flex w-full  justify-between items-center`)}>
                 <LanguageSwitcher />
                 <ul className="flex justify-between items-end  gap-x-[60px]">
-                  {secondNav.map(item => {
-                    const slidePath = pathname.slice(1)
-                    const isActive = `${params.locale}${item.src}` === slidePath || `${params.locale}${item.src}/${params.newsId}` === slidePath;
-
-                    return (
-                      <li
-                        key={item.id}
-                        className={cn(
-                          `text-lg leading-[20px] font-sfPro font-normal text-link transition-all duration-300 hover:text-white whitespace-nowrap py-1 `,
-                          isActive ? "border-b border-[#ffffff] text-white" : "border-b border-transparent"
-                        )}
-                      >
-                        <Link href={item.src}>{tr(item.title)}</Link>
-                      </li>
-                    );
-                  })}
+                  {secondNav.map(item => (
+                    <li
+                      key={item.id}
+                      className={cn(
+                        `text-lg leading-[20px] font-sfPro font-normal text-link transition-all duration-300 hover:text-white whitespace-nowrap py-1 `,
+                        isActiveLink(item.src) ? "border-b border-[#ffffff] text-white" : "border-b border-transparent"
+                      )}
+                    >
+                      <Link href={item.src}>{tr(item.title)}</Link>
+                    </li>
+                  ))}
                 </ul>
                 <SocialMedia />
-                {eventId || productId || pathname === "/cart" ? null : (
+                {showCart ? (
                   <Link href="/cart" className="flex justify-start items-center gap-x-[17px]">
                     <Typography className=" text-white inline-block mb-0">{tr("Кошик")}</Typography>
                     <CartWidget className="relative pb-[2px]" widthNumber={17} heightNumber={17} />
                   </Link>
-                )}
+                ) : null}
               </div>
             </div>
             {/* Main Nav Sticky */}
@@ -134,28 +127,19 @@ export const Header = () => {
               )}
             >
               <ul className=" hidden tablet:flex justify-between items-start gap-x-[35px] desktop:gap-x-[50px] lDesktop:gap-x-[92px]">
-                {mainNav.map(item => {
-                  const mainPath = `/${params.locale}`
-                  const isActive = `${mainPath}${item.src}` === `${pathname}/` ||
-                    `${mainPath}/${params.eventId}` === pathname ||
-                    `${mainPath}/${params.productId}` === pathname ||
-                    `${mainPath}/${params.newsId}` === pathname ||
-                    `${mainPath}${item.src}` === pathname;
-
-                  return (
-                    <li
-                      className={cn(`text-[27px] font-sfPro font-normal leading-normal text-white`, isActive ? "border-b border-white" : "border-b border-transparent")}
-                      key={item.id}
-                    >
-                      <Link className={cn(`pb-2`)} href={item.src}>
-                        {tr(item.title)}
-                      </Link>
-                    </li>
-                  );
-                })}
+                {mainNav.map(item => (
+                  <li
+                    className={cn(`text-[27px] font-sfPro font-normal leading-normal text-white`, isActiveLink(item.src) ? "border-b border-white" : "border-b border-transparent")}
+                    key={item.id}
+                  >
+                    <Link className={cn(`pb-2`)} href={item.src}>
+                      {tr(item.title)}
+                    </Link>
+                  </li>
+                ))}
               </ul>
               <div className="flex justify-end items-end">
-                {eventId || productId || pathname === "/cart" ? (
+                {!showCart ? (
                   <Link href="/cart" className="relative">
                     <CartWidget width={35} height={35} className="mr-8 pr-1" />
                   </Link>

@@ -120,11 +120,3 @@ export type Article = {
  image: ImageUrl[];
  publish_date: string;
 } & BaseResponse
-
-export type INews = {
-  id: number;
-  src: string;
-  date: string;
-  description: string;
-  title: string;
-}

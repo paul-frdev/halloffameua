@@ -60,8 +60,6 @@ export const UpcomingEvents = () => {
 
   const handleNextClick = () => {
     setActiveSlideIndex(prevIndex => prevIndex + 1);
-    console.log(activeSlideIndex);
-
   };
 
 

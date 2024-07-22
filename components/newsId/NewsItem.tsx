@@ -2,7 +2,6 @@
 
 import { fadeIn } from "@/constants";
 import { DateRageIcon } from "@/icons/dateRageIcon";
-import { INews } from "@/types";
 import { motion } from "framer-motion";
 import React from "react";
 import { Container } from '../ui/container';
@@ -11,12 +10,17 @@ import { TypographyP } from '../ui/typographyP';
 import { Title } from '../ui/title';
 import { Image } from '../ui/Image';
 import { Social } from './Social';
+import { News } from '@/types/blog';
+import { usePathname } from '@/i18n.config';
 
 interface INewsItem {
-  newsItem?: INews;
+  newsItem?: News;
 }
 export const NewsItem: React.FC<INewsItem> = ({ newsItem }) => {
 
+  const pathname = usePathname();
+
+  const isArticle = pathname === `/blog/${newsItem?.id}`
 
   return (
     <motion.section initial="initial" animate="animate" variants={fadeIn} className="bg-white pt-12 w-full text-black">
@@ -24,12 +28,12 @@ export const NewsItem: React.FC<INewsItem> = ({ newsItem }) => {
         <Breadcrumbs breadcrumbs={[
           { label: 'Home', href: '/' },
           {
-            label: 'News',
-            href: `/news`,
+            label: `${isArticle ? 'Blog' : 'News'}`,
+            href: `${isArticle ? '/blog' : '/news'}`,
           },
           {
             label: `${newsItem?.title?.length! >= 20 ? newsItem?.title.slice(0, 20) + "..." : newsItem?.title}`,
-            href: `/news/${newsItem?.id}`,
+            href: `${isArticle ? `/blog/${newsItem?.id}` : `/news/${newsItem?.id}`}`,
             active: true,
           },
         ]} />
@@ -45,7 +49,7 @@ export const NewsItem: React.FC<INewsItem> = ({ newsItem }) => {
         </div>
         <div className="mb-12">
           <div className="w-full mb-8">
-            <Image src={newsItem?.src!} alt='news-item'  className='h-[630px] object-cover object-fill object-center'/>
+            <Image src={newsItem?.src!} alt='news-item' className='h-[630px] object-cover object-fill object-center' />
           </div>
           <TypographyP className=" font-sfPro font-normal text-[1.5rem]">{newsItem?.description}</TypographyP>
         </div>

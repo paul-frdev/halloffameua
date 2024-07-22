@@ -67,7 +67,7 @@ export const mainNav = [
   {
     id: 3,
     title: 'Новини',
-    src: '/blog/news',
+    src: '/blog',
   },
   {
     id: 4,
@@ -95,7 +95,7 @@ export const mobileNav = [
   {
     id: 3,
     title: 'Новини',
-    src: '/blog/news',
+    src: '/blog',
   },
   {
     id: 4,
